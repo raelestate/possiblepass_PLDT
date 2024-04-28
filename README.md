@@ -1,7 +1,29 @@
-﻿# Possible Passwords with over **1 Billion Combinations**
- python file provided if the password didn't exist.
- 
- # Only works on new PLDT subscribers that haven't changed their passwords.
- # Download the txt files (warning: the file sizes are GB) and run any cracking libraries in linux.
- # <b>GAMBATTE!</b>
-https://drive.google.com/drive/u/0/folders/1S5DC8uOGndzO2x0xd2uJ1MxZXL0Ii6sO
+##Here's the code:
+#p.s you can choose any Cracking app-ish on linux...
+```console
+import random
+
+# Define the prefix string
+prefix = "PLDTWIFI"
+
+# Define the characters that can be used in the random combinations
+characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+# Define the number of random combinations to generate
+numCombinations = 999999
+
+# Open a text file for writing
+with open("output1.txt", "w") as file:
+    # Loop through the number of combinations to generate and write each one to the file
+    for i in range(numCombinations):
+        combination = prefix
+        
+        # Generate a random string of 5 characters from the "characters" string
+        for j in range(5):
+            combination += random.choice(characters)
+        
+        # Write the combination to the file
+        print(combination)
+        file.write(combination + "\n")
+...
+```
