@@ -1,3 +1,7 @@
+Explanation:
+
+The default passwords of any(not all) PLDT Modems is PLDTWIFI****** <- 6 random characters and numbers combined... you can easily randomize them and produce your own .txt file like rockyou.txt, hashcat.txt and other password .txt available in the web.
+
 ##Here's the code:
 #p.s you can choose any Cracking app-ish on linux...
 ```console
